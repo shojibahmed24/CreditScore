@@ -1,0 +1,238 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: #f4f4f4;
+    perspective: 800px;
+    overflow-x: hidden;
+    line-height: 1.5;
+}
+
+/* Button Styles */
+.btn {
+    background: linear-gradient(135deg, #ff3366, #ff6600);
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.4em;
+    font-weight: 700;
+    border-radius: 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    border: 2px solid #ffffff;
+    min-height: 50px;
+}
+
+.btn-text {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.btn:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+}
+
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+/* Scroll Effect */
+.scroll-3d {
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+    opacity: 0;
+    transform: translateY(40px);
+}
+
+.scroll-3d.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Header Section */
+header {
+    background: linear-gradient(45deg, #007bff, #00c8ff);
+    color: white;
+    padding: 40px 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    color: #ffffff;
+}
+
+/* How It Works Section */
+.how-it-works {
+    background: #e6fffa; /* Light teal */
+    padding: 40px 15px;
+}
+
+.steps {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.step {
+    background: linear-gradient(145deg, #00b3b3, #006666); /* Teal gradient */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 102, 102, 0.3); /* Teal shadow */
+    transition: transform 0.3s ease;
+    text-decoration: none;
+}
+
+.step h3 {
+    color: #ffffff;
+}
+
+.step p {
+    color: #f0f0f0;
+}
+
+.step:hover {
+    transform: scale(1.03);
+}
+
+/* Benefits Section */
+.benefits {
+    background: #e6ffe6; /* Light green */
+    padding: 40px 15px;
+}
+
+.benefits-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.benefit {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 204, 0, 0.2); /* Green shadow */
+    transition: transform 0.3s ease;
+}
+
+.benefit h3 {
+    color: #006600; /* Dark green */
+}
+
+.benefit p {
+    color: #000000;
+}
+
+.benefit:hover {
+    transform: translateY(-5px);
+}
+
+/* FAQ Section */
+.faq {
+    background: #f2e6ff; /* Light purple */
+    padding: 40px 15px;
+}
+
+.faq-item {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: left;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 15px rgba(102, 0, 204, 0.2); /* Purple shadow */
+    transition: transform 0.3s ease;
+}
+
+.faq-item h3 {
+    color: #330066; /* Dark purple */
+}
+
+.faq-item p {
+    color: #000000;
+}
+
+.faq-item:hover {
+    transform: translateY(-5px);
+}
+
+/* CTA Section */
+.cta {
+    background: linear-gradient(45deg, #ff3366, #ff6600);
+    padding: 40px 15px;
+    color: white;
+}
+
+.cta h2 {
+    color: #ffffff;
+}
+
+/* Footer */
+footer {
+    background: #333333; /* Dark gray */
+    color: white;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 1.8em;
+    margin: 0 0 15px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 0 0 20px;
+}
+
+h3 {
+    font-size: 1.2em;
+    margin: 0 0 10px;
+}
+
+p {
+    font-size: 1em;
+    margin: 0 0 15px;
+}
+
+.small-text {
+    font-size: 0.85em;
+    margin-top: 10px;
+}
+
+/* Mobile Optimizations */
+@media (min-width: 768px) {
+    .steps, .benefits-grid {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .step, .benefit {
+        width: 30%;
+    }
+
+    .btn {
+        padding: 20px 40px;
+        font-size: 1.6em;
+        min-height: 60px;
+    }
+
+    h1 { font-size: 2.2em; }
+    h2 { font-size: 1.8em; }
+    h3 { font-size: 1.3em; }
+    p { font-size: 1.1em; }
+}
