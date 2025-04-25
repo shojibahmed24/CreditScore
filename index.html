@@ -1,45 +1,28 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-<!-- Meta Pixel Code -->
-<script>
+    <!-- Meta Pixel Code -->
     <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)}; 
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0'; 
-    n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0]; 
-    s.parentNode.insertBefore(t,s)}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '2723606904695139');
     fbq('track', 'PageView');
     </script>
     <noscript><img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id=2723606904695139&ev=PageView&noscript=1"
     /></noscript>
-	<!--END OF Meta Pixel Code -->
-<meta name="facebook-domain-verification" content="j6nnjxrwgcqlvg7zsbd35nxjvlkv1t" />
+    <!-- End Meta Pixel Code -->
+    <meta name="facebook-domain-verification" content="j6nnjxrwgcqlvg7zsbd35nxjvlkv1t" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Get Your 3 Credit Scores for Just $1 - CreditScoreCheck</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Facebook Pixel Code -->
-    <script>
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '10221818601601997');
-      fbq('track', 'PageView');
-    </script>
-    <noscript>
-      <img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=10221818601601997&ev=PageView&noscript=1"/>
-    </noscript>
-    <!-- End Facebook Pixel Code -->
     <script defer src="script.js"></script>
 </head>
 <body>
@@ -120,23 +103,5 @@
     <footer class="scroll-3d">
         <p>© 2025 CreditScoreCheck. All rights reserved.</p>
     </footer>
-
-    <!-- Custom Events for Facebook Pixel -->
-    <script>
-      document.querySelectorAll('.btn.pulse').forEach(button => {
-        button.addEventListener('click', function() {
-          const buttonText = this.querySelector('.btn-text').textContent;
-          if (buttonText === 'See My Scores Now') {
-            fbq('trackCustom', 'SeeMyScoreClick', {
-              affiliate: '9L8ZTGQ'
-            });
-          } else if (buttonText === 'View Scores Now') {
-            fbq('trackCustom', 'ViewScoresNowClick', {
-              affiliate: '9L8ZTGQ'
-            });
-          }
-        });
-      });
-    </script>
 </body>
 </html>
