@@ -1,0 +1,20 @@
+{
+       "name": "ai-voice-assistant",
+       "version": "1.0.0",
+       "description": "AI Voice Assistant Desktop App",
+       "main": "main.js",
+       "scripts": {
+              "start": "electron .",
+              "dev": "concurrently \"npx tailwindcss -i ./styles.css -o ./dist/styles.css --watch\" \"electron .\""
+       },
+       "dependencies": {
+              "autoprefixer": "^10.4.16",
+              "concurrently": "^8.2.2",
+              "dotenv": "^16.4.5",
+              "electron": "^25.0.0",
+              "postcss": "^8.4.31",
+              "tailwindcss": "^3.4.1",
+              "tesseract.js": "^5.1.0",
+              "uuid": "^10.0.0"
+       }
+}
